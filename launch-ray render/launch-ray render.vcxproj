@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{28F71E25-6182-4875-8AB4-C97099DA32E3}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0.22000.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0.22000.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
+    <QtInstall>6.6.0_msvc2019_64</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
+    <QtInstall>6.6.0_msvc2019_64</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalOptions>/Zc:__cplusplus /permissive- %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalOptions>/Zc:__cplusplus /permissive- %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="renderOptions.cpp" />
+    <QtMoc Include="renderTime.h" />
+    <ClCompile Include="renderTime.cpp" />
+    <ClCompile Include="src\Buckets.cpp" />
+    <ClCompile Include="src\Camera.cpp" />
+    <ClCompile Include="src\KdTree.cpp" />
+    <ClCompile Include="src\Material.cpp" />
+    <ClCompile Include="src\Matrix.cpp" />
+    <ClCompile Include="src\MeshTriangles.cpp" />
+    <ClCompile Include="src\Ray.cpp" />
+    <ClCompile Include="src\Render.cpp" />
+    <ClCompile Include="src\Scene3d.cpp" />
+    <ClCompile Include="src\SceneParser.cpp" />
+    <ClCompile Include="src\Triangle.cpp" />
+    <ClCompile Include="src\Vector3d.cpp" />
+    <QtRcc Include="launchrayrender.qrc" />
+    <QtUic Include="launchrayrender.ui" />
+    <QtMoc Include="launchrayrender.h" />
+    <ClCompile Include="launchrayrender.cpp">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).moc</QtMocFileName>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).moc</QtMocFileName>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <QtUic Include="renderOptions.ui" />
+    <QtUic Include="renderTime.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="renderOptions.h" />
+    <ClInclude Include="src\AABB.h" />
+    <ClInclude Include="src\AccTreeNode.h" />
+    <ClInclude Include="src\BaryCoords.h" />
+    <ClInclude Include="src\Buckets.h" />
+    <ClInclude Include="src\Camera.h" />
+    <ClInclude Include="src\ColorRGB.h" />
+    <ClInclude Include="src\Constants.h" />
+    <ClInclude Include="src\IntersectionData.h" />
+    <ClInclude Include="src\KdTree.h" />
+    <ClInclude Include="src\Lights3d.h" />
+    <ClInclude Include="src\Material.h" />
+    <ClInclude Include="src\Matrix.h" />
+    <ClInclude Include="src\MeshTriangles.h" />
+    <ClInclude Include="src\moveObject.h" />
+    <ClInclude Include="src\pixelImage.h" />
+    <ClInclude Include="src\rapidjson\allocators.h" />
+    <ClInclude Include="src\rapidjson\document.h" />
+    <ClInclude Include="src\rapidjson\encodedstream.h" />
+    <ClInclude Include="src\rapidjson\encodings.h" />
+    <ClInclude Include="src\rapidjson\error\en.h" />
+    <ClInclude Include="src\rapidjson\error\error.h" />
+    <ClInclude Include="src\rapidjson\filereadstream.h" />
+    <ClInclude Include="src\rapidjson\filewritestream.h" />
+    <ClInclude Include="src\rapidjson\fwd.h" />
+    <ClInclude Include="src\rapidjson\internal\biginteger.h" />
+    <ClInclude Include="src\rapidjson\internal\diyfp.h" />
+    <ClInclude Include="src\rapidjson\internal\dtoa.h" />
+    <ClInclude Include="src\rapidjson\internal\ieee754.h" />
+    <ClInclude Include="src\rapidjson\internal\itoa.h" />
+    <ClInclude Include="src\rapidjson\internal\meta.h" />
+    <ClInclude Include="src\rapidjson\internal\pow10.h" />
+    <ClInclude Include="src\rapidjson\internal\regex.h" />
+    <ClInclude Include="src\rapidjson\internal\stack.h" />
+    <ClInclude Include="src\rapidjson\internal\strfunc.h" />
+    <ClInclude Include="src\rapidjson\internal\strtod.h" />
+    <ClInclude Include="src\rapidjson\internal\swap.h" />
+    <ClInclude Include="src\rapidjson\istreamwrapper.h" />
+    <ClInclude Include="src\rapidjson\memorybuffer.h" />
+    <ClInclude Include="src\rapidjson\memorystream.h" />
+    <ClInclude Include="src\rapidjson\msinttypes\inttypes.h" />
+    <ClInclude Include="src\rapidjson\msinttypes\stdint.h" />
+    <ClInclude Include="src\rapidjson\ostreamwrapper.h" />
+    <ClInclude Include="src\rapidjson\pointer.h" />
+    <ClInclude Include="src\rapidjson\prettywriter.h" />
+    <ClInclude Include="src\rapidjson\rapidjson.h" />
+    <ClInclude Include="src\rapidjson\reader.h" />
+    <ClInclude Include="src\rapidjson\schema.h" />
+    <ClInclude Include="src\rapidjson\stream.h" />
+    <ClInclude Include="src\rapidjson\stringbuffer.h" />
+    <ClInclude Include="src\rapidjson\writer.h" />
+    <ClInclude Include="src\Ray.h" />
+    <ClInclude Include="src\Region.h" />
+    <ClInclude Include="src\Render.h" />
+    <ClInclude Include="src\renderSettings.h" />
+    <ClInclude Include="src\Scene3d.h" />
+    <ClInclude Include="src\SceneParser.h" />
+    <ClInclude Include="src\Settings.h" />
+    <ClInclude Include="src\Triangle.h" />
+    <ClInclude Include="src\Vector3d.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

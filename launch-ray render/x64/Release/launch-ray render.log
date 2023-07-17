@@ -1,0 +1,9 @@
+﻿  launchrayrender.cpp
+  renderOptions.cpp
+  Buckets.cpp
+  KdTree.cpp
+  Render.cpp
+C:\Users\pc\Desktop\launch-ray render\launch-ray render\renderOptions.cpp(109): warning C4715: 'renderOptions::setStringFloat': not all control paths return a value
+C:\Users\pc\Desktop\launch-ray render\launch-ray render\renderOptions.cpp(118): warning C4715: 'renderOptions::setStringInt': not all control paths return a value
+  SceneParser.cpp
+  launch-ray render.vcxproj -> C:\Users\pc\Desktop\launch-ray render\x64\Release\launch-ray render.exe

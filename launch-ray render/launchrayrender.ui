@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>launchrayrenderClass</class>
+ <widget class="QMainWindow" name="launchrayrenderClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>671</width>
+    <height>533</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>launchrayrender</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>671</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="openScene"/>
+    <addaction name="saveFrame"/>
+   </widget>
+   <widget class="QMenu" name="RenderButton">
+    <property name="title">
+     <string>Render</string>
+    </property>
+    <widget class="QMenu" name="menurender_mode">
+     <property name="title">
+      <string>render mode</string>
+     </property>
+     <addaction name="actionRegion_rendering"/>
+     <addaction name="actionBucket_rendering_only"/>
+     <addaction name="actionAABB_with_Bucket_rendering"/>
+     <addaction name="actionACC_Tree_AABB_with_Bucket_rendering"/>
+    </widget>
+    <addaction name="menurender_mode"/>
+    <addaction name="actionopen_settings_panel"/>
+    <addaction name="virRenderTime"/>
+   </widget>
+   <widget class="QMenu" name="menuVersion">
+    <property name="title">
+     <string>Version</string>
+    </property>
+    <addaction name="actionVersion_0_1_Beta"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="RenderButton"/>
+   <addaction name="menuVersion"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionVersion_0_1_Beta">
+   <property name="text">
+    <string>Version 0.1 Beta</string>
+   </property>
+  </action>
+  <action name="openScene">
+   <property name="text">
+    <string>open scene</string>
+   </property>
+  </action>
+  <action name="saveFrame">
+   <property name="text">
+    <string>save frame</string>
+   </property>
+  </action>
+  <action name="virRenderTime">
+   <property name="text">
+    <string>view render time</string>
+   </property>
+  </action>
+  <action name="actionRegion_rendering">
+   <property name="text">
+    <string>Region rendering</string>
+   </property>
+  </action>
+  <action name="actionBucket_rendering_only">
+   <property name="text">
+    <string>Bucket rendering only</string>
+   </property>
+  </action>
+  <action name="actionAABB_with_Bucket_rendering">
+   <property name="text">
+    <string>AABB with Bucket rendering</string>
+   </property>
+  </action>
+  <action name="actionACC_Tree_AABB_with_Bucket_rendering">
+   <property name="text">
+    <string>ACC Tree AABB with Bucket rendering</string>
+   </property>
+  </action>
+  <action name="actionopen_settings_panel">
+   <property name="text">
+    <string>open settings panel</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="launchrayrender.qrc"/>
+ </resources>
+ <connections/>
+</ui>
