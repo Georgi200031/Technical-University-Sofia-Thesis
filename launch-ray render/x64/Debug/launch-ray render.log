@@ -1,2 +1,5 @@
 ﻿  launchrayrender.cpp
-  launch-ray render.vcxproj -> C:\Users\pc\Desktop\launch-ray render\x64\Debug\launch-ray render.exe
+  Buckets.cpp
+  Render.cpp
+  SceneParser.cpp
+  launch-ray render.vcxproj -> C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\x64\Debug\launch-ray render.exe

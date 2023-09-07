@@ -1,19 +1,20 @@
-C:\Users\pc\Desktop\launch-ray render\launch-ray render\renderOptions.cpp;C:\Users\pc\Desktop\launch-ray render\launch-ray render\x64\Debug\renderOptions.obj
-C:\Users\pc\Desktop\launch-ray render\launch-ray render\renderTime.cpp;C:\Users\pc\Desktop\launch-ray render\launch-ray render\x64\Debug\renderTime.obj
-C:\Users\pc\Desktop\launch-ray render\launch-ray render\src\Buckets.cpp;C:\Users\pc\Desktop\launch-ray render\launch-ray render\x64\Debug\Buckets.obj
-C:\Users\pc\Desktop\launch-ray render\launch-ray render\src\Camera.cpp;C:\Users\pc\Desktop\launch-ray render\launch-ray render\x64\Debug\Camera.obj
-C:\Users\pc\Desktop\launch-ray render\launch-ray render\src\Material.cpp;C:\Users\pc\Desktop\launch-ray render\launch-ray render\x64\Debug\Material.obj
-C:\Users\pc\Desktop\launch-ray render\launch-ray render\src\Matrix.cpp;C:\Users\pc\Desktop\launch-ray render\launch-ray render\x64\Debug\Matrix.obj
-C:\Users\pc\Desktop\launch-ray render\launch-ray render\src\MeshTriangles.cpp;C:\Users\pc\Desktop\launch-ray render\launch-ray render\x64\Debug\MeshTriangles.obj
-C:\Users\pc\Desktop\launch-ray render\launch-ray render\src\Ray.cpp;C:\Users\pc\Desktop\launch-ray render\launch-ray render\x64\Debug\Ray.obj
-C:\Users\pc\Desktop\launch-ray render\launch-ray render\src\Render.cpp;C:\Users\pc\Desktop\launch-ray render\launch-ray render\x64\Debug\Render.obj
-C:\Users\pc\Desktop\launch-ray render\launch-ray render\src\Scene3d.cpp;C:\Users\pc\Desktop\launch-ray render\launch-ray render\x64\Debug\Scene3d.obj
-C:\Users\pc\Desktop\launch-ray render\launch-ray render\src\SceneParser.cpp;C:\Users\pc\Desktop\launch-ray render\launch-ray render\x64\Debug\SceneParser.obj
-C:\Users\pc\Desktop\launch-ray render\launch-ray render\src\Triangle.cpp;C:\Users\pc\Desktop\launch-ray render\launch-ray render\x64\Debug\Triangle.obj
-C:\Users\pc\Desktop\launch-ray render\launch-ray render\src\Vector3d.cpp;C:\Users\pc\Desktop\launch-ray render\launch-ray render\x64\Debug\Vector3d.obj
-C:\Users\pc\Desktop\launch-ray render\launch-ray render\launchrayrender.cpp;C:\Users\pc\Desktop\launch-ray render\launch-ray render\x64\Debug\launchrayrender.obj
-C:\Users\pc\Desktop\launch-ray render\launch-ray render\main.cpp;C:\Users\pc\Desktop\launch-ray render\launch-ray render\x64\Debug\main.obj
-C:\Users\pc\Desktop\launch-ray render\launch-ray render\x64\Debug\rcc\qrc_launchrayrender.cpp;C:\Users\pc\Desktop\launch-ray render\launch-ray render\x64\Debug\qrc_launchrayrender.obj
-C:\Users\pc\Desktop\launch-ray render\launch-ray render\x64\Debug\moc\moc_renderTime.cpp;C:\Users\pc\Desktop\launch-ray render\launch-ray render\x64\Debug\moc_renderTime.obj
-C:\Users\pc\Desktop\launch-ray render\launch-ray render\x64\Debug\moc\moc_launchrayrender.cpp;C:\Users\pc\Desktop\launch-ray render\launch-ray render\x64\Debug\moc_launchrayrender.obj
-C:\Users\pc\Desktop\launch-ray render\launch-ray render\x64\Debug\moc\moc_renderOptions.cpp;C:\Users\pc\Desktop\launch-ray render\launch-ray render\x64\Debug\moc_renderOptions.obj
+C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\launch-ray render\renderOptions.cpp;C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\launch-ray render\x64\Debug\renderOptions.obj
+C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\launch-ray render\renderTime.cpp;C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\launch-ray render\x64\Debug\renderTime.obj
+C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\launch-ray render\src\Buckets.cpp;C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\launch-ray render\x64\Debug\Buckets.obj
+C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\launch-ray render\src\Camera.cpp;C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\launch-ray render\x64\Debug\Camera.obj
+C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\launch-ray render\src\KdTree.cpp;C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\launch-ray render\x64\Debug\KdTree.obj
+C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\launch-ray render\src\Material.cpp;C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\launch-ray render\x64\Debug\Material.obj
+C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\launch-ray render\src\Matrix.cpp;C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\launch-ray render\x64\Debug\Matrix.obj
+C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\launch-ray render\src\MeshTriangles.cpp;C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\launch-ray render\x64\Debug\MeshTriangles.obj
+C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\launch-ray render\src\Ray.cpp;C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\launch-ray render\x64\Debug\Ray.obj
+C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\launch-ray render\src\Render.cpp;C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\launch-ray render\x64\Debug\Render.obj
+C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\launch-ray render\src\Scene3d.cpp;C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\launch-ray render\x64\Debug\Scene3d.obj
+C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\launch-ray render\src\SceneParser.cpp;C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\launch-ray render\x64\Debug\SceneParser.obj
+C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\launch-ray render\src\Triangle.cpp;C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\launch-ray render\x64\Debug\Triangle.obj
+C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\launch-ray render\src\Vector3d.cpp;C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\launch-ray render\x64\Debug\Vector3d.obj
+C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\launch-ray render\launchrayrender.cpp;C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\launch-ray render\x64\Debug\launchrayrender.obj
+C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\launch-ray render\main.cpp;C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\launch-ray render\x64\Debug\main.obj
+C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\launch-ray render\x64\Debug\rcc\qrc_launchrayrender.cpp;C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\launch-ray render\x64\Debug\qrc_launchrayrender.obj
+C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\launch-ray render\x64\Debug\moc\moc_renderTime.cpp;C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\launch-ray render\x64\Debug\moc_renderTime.obj
+C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\launch-ray render\x64\Debug\moc\moc_launchrayrender.cpp;C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\launch-ray render\x64\Debug\moc_launchrayrender.obj
+C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\launch-ray render\x64\Debug\moc\moc_renderOptions.cpp;C:\Users\pc\Desktop\Technical-University-Sofia-Thesis\launch-ray render\x64\Debug\moc_renderOptions.obj

@@ -30,7 +30,7 @@ launchrayrender::launchrayrender(QWidget* parent)
     connect(ui.openScene, &QAction::triggered, this, &launchrayrender::handleFileClick);
     connect(ui.saveFrame, &QAction::triggered, this, &launchrayrender::handleFileSaveFrame);
     connect(ui.virRenderTime, &QAction::triggered, this, &launchrayrender::handleRenderTimeClick);
-    connect(ui.actionopen_settings_panel, &QAction::triggered, this, &launchrayrender::openSettingsPanel);
+    //connect(ui.actionopen_settings_panel, &QAction::triggered, this, &launchrayrender::openSettingsPanel);
     update();
 }
 void launchrayrender::handleRenderTimeClick() {
@@ -138,8 +138,6 @@ void launchrayrender::handelRenderingMode(MultithreadingMode renderingMode)
     parsedScene.getCamera().truck(this->renderSettings.cameraSetting.truck);
     parsedScene.getCamera().dolly(this->renderSettings.cameraSetting.dolly);
 
-    moveObject moveGlassBoll(inputFilePath, 3);
-    moveObject moveMirrorBoll(inputFilePath, 2);
 
     this->renderSettings.isRenderedPicture = false;
     render.pixelMatrix = this->pixelMatrix;

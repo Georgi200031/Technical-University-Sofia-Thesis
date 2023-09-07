@@ -85,7 +85,7 @@ Vector3d Render::shadeReflective(const Ray& ray, intersectionData& data) {
 
 Vector3d Render::shadeRefractive(const Ray& ray,  intersectionData& data) {
         float n1 = 1.f;   // refractive index of air
-        float n2 = 1.5f;   // refractive index of sphere material (if have no ior set to 1.5 by default)
+        float n2 = data.material->ior;   // refractive index of sphere material (if have no ior set to 1.5 by default)
         Vector3d& N = data.material->smoothShading ? data.hitPointNormal : data.triangleIntersectNormal;
         float cosAlpha = std::clamp(1.f, -1.f, ray.direction.dot(N));
         if (cosAlpha > 0) {

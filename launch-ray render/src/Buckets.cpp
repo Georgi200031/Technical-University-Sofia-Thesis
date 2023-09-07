@@ -3,7 +3,7 @@
 #include "Render.h" 
 
 
-void BucketGenerator::createBucketArray(Render& render,const int& imageHeight, const int& imageWidth, const int& bucketSize, std::vector<std::vector<ColorRGB>>& pixelMatrix) {
+void BucketGenerator::createBucketArray(Render& render, std::vector<std::vector<ColorRGB>>& pixelMatrix) {
     std::mutex bucketMutex;
     while (true) {
         // Lock the bucket (wait until bucket can be locked)
@@ -31,7 +31,7 @@ void BucketGenerator::createBucketArray(Render& render,const int& imageHeight, c
 void BucketGenerator::BucketRendering(Render& render, const int& imageHeight, const int& imageWidth, const int& bucketSize, int cpuThreadsCount, std::vector<std::vector<ColorRGB>>& pixelMatrix) {
 	BucketArray(imageHeight, imageWidth, bucketSize);
 	for (int i = 0; i < cpuThreadsCount; ++i) {
-		threads.emplace_back(std::thread(&BucketGenerator::createBucketArray, this, std::ref(render), std::ref(imageHeight), std::ref(imageWidth), std::ref(bucketSize), std::ref(pixelMatrix)));
+		threads.emplace_back(std::thread(&BucketGenerator::createBucketArray, this, std::ref(render),  std::ref(pixelMatrix)));
 	}
 
 	// Wait for all threads to finish

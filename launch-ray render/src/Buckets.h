@@ -25,7 +25,7 @@ public:
 		function create array with buckets and calculte coordinates of each bucket
 		 each bucket is with size given from scene.Bucket array is created horizontally
 	*/
-	void createBucketArray(Render& render, const int& imageHeight, const int& imageWidth, const int& bucketSize, std::vector<std::vector<ColorRGB>>& pixelMatrix);
+	void createBucketArray(Render& render,  std::vector<std::vector<ColorRGB>>& pixelMatrix);
 	void BucketRendering(Render& render, const int& imageHeight, const int& imageWidth, const int& bucketSize, int cpuThreadsCount, std::vector<std::vector<ColorRGB>>& pixelMatrix);
 private:
 	const size_t numberOfThreads = std::thread::hardware_concurrency();

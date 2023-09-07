@@ -12,8 +12,8 @@
 #include "Buckets.h"
 #include <QTimer>
 #include "renderSettings.h"
-#include "C:\Users\pc\Desktop\launch-ray render\launch-ray render\launchrayrender.h"
-#include "C:\Users\pc\Desktop\launch-ray render\launch-ray render\renderTime.h"
+#include "../launchrayrender.h"
+#include "../renderTime.h"
 
 class bucketGenerator;
 
