@@ -1,4 +1,5 @@
-FULL DOCUMENTATION HERE: [Result](Дипломна работа.doc)
+FULL DOCUMENTATION HERE: [Дипломна работа.doc](/Дипломна%20работа.doc)
+
 #Qt final Project Ray Tracing
 To run final Project (in windows) open environment Variables add path of (launch-Ray render/6.6.0/msvc2019_64\bin) and the open .exe in x64/Release/launch-ray Render.exe
 ![Result](/instruciton/set.png)
