@@ -1,0 +1,11 @@
+# Local IDE and compiler output
+.vs/
+**/Debug/
+**/Release/
+**/x64/
+*.user
+*.obj
+*.pdb
+*.ilk
+*.tlog
+*.log
